@@ -1,11 +1,9 @@
 <div align="center">
     <a href="https://github.com/kaangiray26/nocturne">
-        <img src="https://raw.githubusercontent.com/kaangiray26/nocturne/main/src/public/images/logo_compressed.png" alt="Geddit Logo" width="80" height="80">
+        <img src="https://raw.githubusercontent.com/kaangiray26/nocturne/main/src/public/images/logo_compressed.png" alt="Nocturne Logo" height="64">
     </a>
-    <h2 align="center">Nocturne</h2>
-    <a href="https://www.nocturne.rocks/">
-        <h3><b>Open in your browser<b></h3>
-    </a>
+    <h1 align="center">Nocturne</h2>
+    <a href="https://www.nocturne.rocks/">Open in your browser</a>
     <p align="center">
         An open-source client-side PDF editor with configurable pipelines
         <br />
