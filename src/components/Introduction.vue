@@ -3,7 +3,7 @@
         <div class="col col-12 col-md-6 d-flex justify-content-center">
             <div class="row w-100 g-3 px-2">
                 <div class="col-auto">
-                    <div class="input-group">
+                    <div class="input-group mb-3">
                         <label ref="droparea" class="upload-label dropable rounded shadow" for="pdfupload"
                             @dragenter="dragenter" @dragover="dragover" @drop="drop" @dragexit="dragexit">
                             <span class="material-icons-outlined mb-2">file_upload</span>
@@ -12,6 +12,9 @@
                         <input type="file" class="form-control" id="pdfupload" accept="application/pdf"
                             @change="emit('file_input', $event)" hidden>
                     </div>
+                    <ins class="adsbygoogle" style="display:flex" data-ad-format="fluid"
+                        data-ad-layout-key="-f5+5l+6u-dz+17" data-ad-client="ca-pub-4228715284139659"
+                        data-ad-slot="5647241715"></ins>
                 </div>
                 <div class="col">
                     <div class="row g-3">

@@ -4,6 +4,9 @@
             <div class="d-flex flex-column">
                 <h2>About</h2>
                 <hr>
+                <ins class="adsbygoogle" style="display:flex" data-ad-format="fluid" data-ad-layout-key="-f5+5l+6u-dz+17"
+                    data-ad-client="ca-pub-4228715284139659" data-ad-slot="5647241715"></ins>
+                <hr>
                 <h3>Nocturne: Your Free, Open-Source PDF Editor</h3>
                 <p>At Nocturne, we believe that every document tells a story, and we're here to help you craft, modify, and
                     refine those stories effortlessly. Our innovative PDF editor, adorned with the wise and watchful owl as
