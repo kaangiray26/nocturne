@@ -26,7 +26,7 @@
                         <div class="col">
                             <div class="banner-square shadow p-3">
                                 <h2 class="text-4 fw-bold">Pipelines</h2>
-                                <img src="/images/pipes.png" class="img-fluid rounded mb-2">
+                                <img src="/images/pipes_compressed.png" class="img-fluid rounded mb-2">
                                 <span>Automate your workflow with Nocturne's pipelines, which allow you to
                                     chain multiple operations together.</span>
                             </div>

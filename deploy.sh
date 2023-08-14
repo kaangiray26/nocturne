@@ -7,6 +7,6 @@ cp index.html 404.html
 git init
 git add .
 git commit -m "deploy"
-git remote add origin git@github.com:<USER>/<REPO>.git
+git remote add origin git@github.com:kaangiray26/nocturne.git
 git push --force origin main:gh-pages
 cd ../..

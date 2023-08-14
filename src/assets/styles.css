@@ -20,6 +20,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    user-select: none;
 }
 
 pre {
@@ -100,7 +101,7 @@ pre {
     cursor: pointer;
     color: var(--nord4);
     padding: 16px;
-    border: 4px dashed var(--nord0);
+    border: 2px dashed var(--nord0);
     user-select: none;
 }
 
@@ -197,4 +198,8 @@ pre {
 .circle {
     border-radius: 50% !important;
     aspect-ratio: 1/1 !important;
+}
+
+.fw-500 {
+    font-weight: 500;
 }

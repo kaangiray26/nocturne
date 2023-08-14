@@ -10,7 +10,7 @@
     </div>
     <div v-else>
         <div class="row g-0 justify-content-center">
-            <div class="col col-12 col-md-6 p-3">
+            <div class="col col-12 col-md-6 px-3">
                 <div class="d-flex flex-column text-4 bg-0 p-3 rounded shadow mb-3">
                     <h3>File Details</h3>
                     <div class="d-flex flex-wrap">

@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
     "version": "0.1",
-    "name": "Vue.js App",
-    "short_name": "Vue",
+    "name": "Nocturne",
+    "short_name": "Nocturne",
     "icons": [
         {
-            "src": "/images/50x43.png",
+            "src": "/images/icon.png",
             "sizes": "50x43",
             "type": "image/png"
         }
