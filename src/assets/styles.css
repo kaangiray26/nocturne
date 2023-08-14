@@ -1,0 +1,200 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("./nord.css");
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: var(--nord4);
+}
+
+#app {
+    height: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+pre {
+    margin: 0;
+    margin-left: 4px;
+    background-color: black;
+    color: var(--nord13);
+    padding-left: 4px;
+    padding-right: 4px;
+    white-space: pre-wrap;
+}
+
+.topbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--nord3);
+    padding: 16px;
+}
+
+.topbar .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar .col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar .col>div {
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .logo {
+    font-size: 2.02729em;
+    font-weight: 700;
+}
+
+.topbar .menu {
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+.topbar .material-icons {
+    font-size: 12px;
+}
+
+.card-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder-bg {
+    height: 100%;
+    width: 100%;
+    background-color: var(--nord3);
+    border-radius: 8px;
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--nord0);
+    cursor: pointer;
+    color: var(--nord4);
+    padding: 16px;
+    border: 4px dashed var(--nord0);
+    user-select: none;
+}
+
+.upload-label .material-icons-outlined {
+    font-size: 32px;
+}
+
+.banner-wide {
+    width: 100%;
+    /* aspect-ratio: 2/1; */
+    background-color: var(--nord0);
+    border-radius: 8px;
+    color: var(--nord4);
+}
+
+.banner-square {
+    height: 100%;
+    background-color: var(--nord0);
+    border-radius: 8px;
+    color: var(--nord4);
+}
+
+.text-value {
+    background-color: black;
+    color: var(--nord13);
+    padding-left: 4px;
+    padding-right: 4px;
+    white-space: wrap;
+    word-wrap: normal;
+    word-break: break-all;
+}
+
+.theme-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px;
+    border: unset;
+    user-select: none;
+}
+
+.hoverable:hover {
+    opacity: 0.8;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+}
+
+.operation {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: var(--nord3);
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.operation-parameters {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: var(--nord1);
+}
+
+.droppable {
+    border: 2px dashed var(--nord4);
+    border-radius: 8px;
+    padding: 16px;
+    user-select: none;
+}
+
+.dragover {
+    background-color: var(--nord4);
+    border: 2px dashed var(--nord0);
+    color: var(--nord0);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.flex-grow {
+    flex: 1 1 auto;
+}
+
+.cover-all {
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    border-radius: 50% !important;
+    aspect-ratio: 1/1 !important;
+}
