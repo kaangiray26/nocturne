@@ -42,47 +42,47 @@ Modification Date : {{ doc.getModificationDate() }}</pre>
                     </div>
                     <div class="d-flex flex-wrap">
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="rotate" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('rotate')">
                             <span class="material-icons-outlined">refresh</span>
                             <span>Rotate</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="add" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('add')">
                             <span class="material-icons-outlined">layers</span>
                             <span>Add</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="remove" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('remove')">
                             <span class="material-icons-outlined">delete</span>
                             <span>Remove</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="extract" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('extract')">
                             <span class="material-icons-outlined">call_split</span>
                             <span>Extract</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="reverse" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('reverse')">
                             <span class="material-icons-outlined">low_priority</span>
                             <span>Reverse</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="enumerate" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('enumerate')">
                             <span class="material-icons-outlined">format_list_numbered</span>
                             <span>Enumerate</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="scale" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('scale')">
                             <span class="material-icons-outlined">aspect_ratio</span>
                             <span>Scale</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="metadata" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('metadata')">
                             <span class="material-icons-outlined">info</span>
                             <span>Metadata</span>
                         </button>
                         <button type="button" class="theme-btn bg-4 text-0 mb-2 me-2" data="rename" draggable="true"
-                            @dragstart="dragstart" @drop="drop">
+                            @dragstart="dragstart" @drop="drop" @click="add_operation('rename')">
                             <span class="material-icons-outlined">title</span>
                             <span>Rename</span>
                         </button>
@@ -113,7 +113,7 @@ Modification Date : {{ doc.getModificationDate() }}</pre>
                         <div ref="droparea" class="operation droppable" @dragover="dragover" @drop="drop"
                             @dragenter="dragenter" @dragexit="dragexit">
                             <div class="d-flex">
-                                <span>Drag and drop operations here.</span>
+                                <span>Drag and drop operations here, or just click on them.</span>
                             </div>
                         </div>
                     </div>
@@ -220,11 +220,7 @@ async function handle_file_input(e) {
         });
 }
 
-async function drop(event) {
-    event.preventDefault();
-    droparea.value.classList.remove('dragover');
-
-    let op = event.dataTransfer.getData('text');
+async function add_operation(op) {
     if (op === 'rotate') {
         pipeline.value.push({
             name: 'Rotate',
@@ -384,6 +380,13 @@ async function drop(event) {
         })
         return
     }
+}
+
+async function drop(event) {
+    event.preventDefault();
+    droparea.value.classList.remove('dragover');
+    let op = event.dataTransfer.getData('text');
+    add_operation(op);
 }
 
 async function dragstart(event) {
