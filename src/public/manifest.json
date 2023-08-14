@@ -5,7 +5,7 @@
     "short_name": "Nocturne",
     "icons": [
         {
-            "src": "/images/icon.png",
+            "src": "/images/logo_compressed.png",
             "sizes": "50x43",
             "type": "image/png"
         }

@@ -4,7 +4,7 @@
             <div class="d-flex flex-wrap justify-content-between align-items-center p-3 rounded">
                 <router-link to="/" class="me-2 mb-2 user-select-none">
                     <div class="d-flex align-items-center">
-                        <img src="/images/icon.png" alt="Nocturne" height="48" class="me-2" />
+                        <img src="/images/logo_compressed.png" alt="Nocturne" height="48" class="me-2" />
                         <span class="fw-bold text-0 m-0">Nocturne</span>
                     </div>
                 </router-link>
